@@ -102,6 +102,14 @@ These categories represent the most resource-intensive and high-priority respons
 - Insight: Spring and day shifts consistently demand the most staffing support.
 
 ---
+### 📈 ZIP Code Growth Trends (2019 vs 2018)
+
+<img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/zip_growth_trend.png" width="700">
+
+ZIP Code **37135 (Nolensville)** experienced the highest growth rate in 2019 with an increase of **+2.0**, indicating strong regional development.  
+This analysis highlights Nashville’s suburban expansion and evolving safety demands.
+
+---
 
 ## 🔹 Geospatial Hotspots
 <img src="visuals/heatmap_nashville.png" width="700">
