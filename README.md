@@ -166,8 +166,9 @@ By identifying when and where calls occur most, Nashville’s police and communi
 ---
 ## 👩‍💻 Author
 
-Jing You
-- 📍 Data Engineer & Data Analyst in Training, Nashville Software School
-- 🔗 LinkedIn
--  | ✉️ jingliuyou@gmail.com
+Jing You  
+- 📍 Data Engineer & Data Analyst in Training  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/jing-you84/)  
+- ✉️ [jingliuyou@gmail.com](mailto:jingliuyou@gmail.com)
+
  ---
