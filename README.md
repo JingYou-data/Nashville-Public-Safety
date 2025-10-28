@@ -1,3 +1,5 @@
+![Nashville Public Safety](https://capsule-render.vercel.app/api?type=waving&color=0:4A90E2,100:50E3C2&height=160&section=header&text=From%20Calls%20to%20Crimes:%20Nashville%20Public%20Safety%20Analysis&fontColor=ffffff&fontSize=25)
+
 # 🚔 From Calls to Crimes: Analyzing Public Safety Trends in Nashville
 
 **Capstone Project | Nashville Software School (NSS)**  
