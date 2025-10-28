@@ -82,11 +82,12 @@ Provide insights for smarter shift scheduling and patrol strategies
 
 ---
 
-## 🔹 Crime Confirmation Patterns
-<img src="visuals/call_types_confirmation.png" width="700">
+### 🔹 Crime Confirmation Patterns
 
-- Theft ranks highest with a 55.3% confirmation rate, followed by Missing Person (23.1%) and Escaped Prisoner (21.4%).
-- These categories represent the most resource-intensive and high-priority response types.
+<img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/call_types_confirmation.png" width="700">
+
+**Theft** ranks highest with a **55.3%** confirmation rate, followed by **Missing Person (23.1%)** and **Escaped Prisoner (21.4%)**.  
+These categories represent the most resource-intensive and high-priority response types.
 
 ---
 
