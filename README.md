@@ -144,15 +144,6 @@ Review and refine low-confirmation call types to reduce response burden.
 - Working with 1M+ rows required optimized filtering and aggregation.
 - Cleaning inconsistent timestamps and location data was critical.
 - Geospatial visualization in Folium provided new insights but required careful coordinate alignment.
----
-## 💡 Key Takeaways
-- 🌟 Project Impact
-
-- This project demonstrates how public safety analytics can guide smarter operational planning.
-By identifying when and where calls occur most, Nashville’s police and community programs can allocate resources more effectively — supporting both efficiency and equity in public service.
-
-- "Data can’t stop crime — but it can make communities safer."
-
 
 ---
 ## 📎 References
