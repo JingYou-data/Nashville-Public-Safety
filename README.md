@@ -89,6 +89,7 @@ Provide insights for smarter shift scheduling and patrol strategies
 **Theft** ranks highest with a **55.3%** confirmation rate, followed by **Missing Person (23.1%)** and **Escaped Prisoner (21.4%)**.  
 These categories represent the most resource-intensive and high-priority response types.
 
+
 ---
 
 ## 🔹 Call Trends by Shift (2018–2021)
