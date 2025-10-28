@@ -65,11 +65,13 @@ Provide insights for smarter shift scheduling and patrol strategies
 - Visualization Tools: Power BI, Matplotlib, Seaborn
 - Data Process: Cleaning → Aggregation → Geospatial Mapping → Time-Series Analysis
 ---
-## 🗺️ Geographic Context
-<img src="visuals/nashville_zip_map.png" width="700">
+### 🗺️ Nashville ZIP Code Map
 
-- Nashville’s public safety zones span urban centers and suburban neighborhoods.
-- The map above highlights major ZIP areas used for geospatial grouping in this analysis.
+<img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/nashville_zip_map.png" width="700">
+
+This map outlines major ZIP code areas in Nashville, providing geographic context for public safety analysis.  
+It helps identify spatial patterns across neighborhoods and visualize call distribution by area.
+
 ---
 
 ## 💡 Insights
