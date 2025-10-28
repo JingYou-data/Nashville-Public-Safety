@@ -84,7 +84,7 @@ It helps identify spatial patterns across neighborhoods and visualize call distr
 
 ---
 
-### 🔹 Crime Confirmation Patterns
+### 🚨 Crime Confirmation Patterns
 
 <img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/call_types_confirmation.png" width="700">
 
