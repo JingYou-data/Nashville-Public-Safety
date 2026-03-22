@@ -2,85 +2,59 @@
 
 # 🚔 From Calls to Crimes: Analyzing Public Safety Trends in Nashville
 
-**Capstone Project | Nashville Software School (NSS)**  
-Exploring how public safety data helps us understand neighborhood trends and support smarter, data-driven decisions for a safer city.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Pandas%20%7C%20Folium%20%7C%20GeoPandas-blue?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
+  <img src="https://img.shields.io/badge/Records-1M%2B-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Period-2018–2021-orange?style=for-the-badge">
+</p>
+
+> **Geospatial and time-series analysis of 911 calls and police-reported crime data across Nashville — identifying hotspots, shift patterns, and ZIP-level growth trends to support smarter public safety planning.**
 
 ---
 
-## 📖 Executive Summary
-This project examines 911 call and police-reported crime data from the Metro Nashville Police Department between 2018 and 2021.
-By combining geospatial and time-series analysis, it identifies patterns, hotspots, and behavioral trends that reveal how call activity varies by location, time, and shift — supporting better public safety planning and resource allocation.
+## 📌 Project Overview
 
----
-
-## 🧭 Motivation
-Nashville has experienced rapid population and economic growth in recent years.
-With this expansion, understanding where and when incidents occur becomes critical for public safety planning.
-
-This project aims to:
-
-Reveal neighborhood-level differences in incident types and volume
-
-Connect 911 call data with crime confirmation outcomes
-
-Provide insights for smarter shift scheduling and patrol strategies
+| | |
+|---|---|
+| **Data Sources** | Metro Nashville Police Department + HubNashville Open Data |
+| **Period** | 2018 – 2021 |
+| **Records** | 1M+ rows across 4 datasets |
+| **Analysis Types** | Geospatial mapping, time-series, crime confirmation, ZIP growth trends |
+| **Tools** | Python, Pandas, Folium, GeoPandas, Power BI, PostgreSQL, Docker |
 
 ---
 
 ## 📊 Datasets
+
 | Dataset | Description | Source |
-|----------|--------------|--------|
-| Metro Police Department Incidents (2018–2021) | Crime data by type, time, and ZIP code | Metro Nashville Open Data Portal |
-| 911 Calls for Service (2018–2021) | Citizen-reported safety and service issues | HubNashville |
+|---|---|---|
+| MNPD Crime Incidents (2018–2021) | Crime type, time, and ZIP code | Metro Nashville Open Data |
+| 911 Calls for Service (2018–2021) | Citizen-reported safety and service calls | HubNashville |
 | Fines and Violations | Public sanitation fines and collection outcomes | HubNashville |
-| Geospatial Boundaries | ZIP code and district shapefiles | MNPD Open Data |
-
----
-
-## ⚙️ Technologies Used
-**Languages:** Python, SQL  
-**Libraries:** Pandas, Folium, Matplotlib, GeoPandas  
-**Tools:** Power BI, PostgreSQL, Docker, Jupyter Notebook  
+| Geospatial Boundaries | ZIP code and precinct shapefiles | MNPD Open Data |
 
 ---
 
 ## 🔍 Key Questions
-- 1. What are the most frequent incident types by ZIP code?
-- 2. How do 911 calls correlate with confirmed crimes?
-- 3. What times of day and days of the week show the highest activity?
-- 4. Which ZIP codes and precincts report the most growth?
-- 5. How have call volumes shifted over the years and across shifts?
----
 
-## 🗺️ Visualizations
-- 🧭 **Folium Heatmap**: Hotspots of crime and 911 calls across ZIP codes  
-- 📈 **Power BI Dashboard**: Interactive view of trends, routes, and fines  
-- 🕒 **Time-Series Charts**: Monthly and daily trends of incidents  
-- 🧮 **ZIP Comparison Matrix**: Contractor vs Metro performance metrics  
+| Question | Insight Delivered |
+|---|---|
+| What are the most frequent incident types by ZIP code? | Resource allocation by neighborhood |
+| How do 911 calls correlate with confirmed crimes? | Identify high-confirmation call types |
+| What times of day show the highest activity? | Optimize shift scheduling |
+| Which ZIP codes show the most growth? | Anticipate suburban safety demand |
+| How have call volumes shifted over 4 years? | Longitudinal trend analysis |
 
 ---
-## ⚙️ Tools & Techniques
 
-- Languages & Libraries: Python (Pandas, GeoPandas, Folium)
-- Visualization Tools: Power BI, Matplotlib, Seaborn
-- Data Process: Cleaning → Aggregation → Geospatial Mapping → Time-Series Analysis
----
+## 💡 Key Insights
+
 ### 🗺️ Nashville ZIP Code Map
 
 <img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/nashville_zip_map.png" width="700">
 
-This map outlines major ZIP code areas in Nashville, providing geographic context for public safety analysis.  
-It helps identify spatial patterns across neighborhoods and visualize call distribution by area.
-
----
-
-## 💡 Insights
-🔹 ZIP Code Growth Trends
-| Year | Highlight | Key ZIPs |
-|----------|--------------|--------|
-|2019 vs 2018 |	37135 (Nolensville) recorded the highest growth rate (+2.0), showing strong regional development.|	37135, 37203, 37209 |
-|2020 vs 2019 |	37086 (La Vergne) and 37143 showed over 100% increase in calls — possibly due to population shifts and local events.	|37086, 37143, 37232 |
-|2021 vs 2020	|Continued high growth in fast-developing suburban and business zones.|37208, 37210, 37207 |
+Geographic context for public safety analysis — spatial patterns across Nashville neighborhoods.
 
 ---
 
@@ -88,78 +62,87 @@ It helps identify spatial patterns across neighborhoods and visualize call distr
 
 <img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/call_types_confirmation.png" width="700">
 
-**Theft** ranks highest with a **55.3%** confirmation rate, followed by **Missing Person (23.1%)** and **Escaped Prisoner (21.4%)**.  
-These categories represent the most resource-intensive and high-priority response types.
-
+**Theft** has the highest confirmation rate at **55.3%**, followed by **Missing Person (23.1%)** and **Escaped Prisoner (21.4%)** — representing the most resource-intensive response categories.
 
 ---
 
-## 🔹 Call Trends by Shift (2018–2021)
-
-- Shift A (6 AM – 2 PM): Handles the most calls, especially during Spring.
-- Shift B (2 PM – 10 PM): Steady decline after 2019.
-- Shift C (10 PM – 6 AM): Lowest volume but mirrors general trends.
-- Insight: Spring and day shifts consistently demand the most staffing support.
-
----
 ### 📈 ZIP Code Growth Trends (2019 vs 2018)
 
 <img src="https://raw.githubusercontent.com/JingYou-data/Nashville-Public-Safety/main/visuals/zip_growth_trend.png" width="700">
 
-ZIP Code **37135 (Nolensville)** experienced the highest growth rate in 2019 with an increase of **+2.0**, indicating strong regional development.  
-This analysis highlights Nashville’s suburban expansion and evolving safety demands.
+| Period | Finding | Key ZIPs |
+|---|---|---|
+| 2019 vs 2018 | **37135 (Nolensville)** highest growth rate (+2.0) — strong suburban development | 37135, 37203, 37209 |
+| 2020 vs 2019 | **37086** and **37143** showed 100%+ increase — population shifts and local events | 37086, 37143, 37232 |
+| 2021 vs 2020 | Continued high growth in fast-developing suburban and business zones | 37208, 37210, 37207 |
 
 ---
 
-## 🔹 Geospatial Hotspots
+### 🔹 Call Trends by Shift (2018–2021)
+
+| Shift | Hours | Pattern |
+|---|---|---|
+| Shift A | 6 AM – 2 PM | Highest volume, especially Spring — most staffing demand |
+| Shift B | 2 PM – 10 PM | Steady decline after 2019 |
+| Shift C | 10 PM – 6 AM | Lowest volume, mirrors general trends |
+
+---
+
+### 🔥 Geospatial Hotspots
+
 <img src="visuals/heatmap_nashville.png" width="700">
 
-- The heatmap shows Downtown, East Nashville, and South Nashville as the highest incident-density areas.
-- Business corridors show strong demand for officer assistance and security patrols.
+Downtown, East Nashville, and South Nashville show the highest incident density. Business corridors drive strong demand for patrol and security response.
 
 ---
 
 ## 💬 Recommendations
 
-- ✅ Optimize Patrol Deployment
-Increase coverage during Spring and morning/day shifts (6 AM–2 PM).
-
-- ✅ Focus on High-Growth ZIPs
-Prioritize 37135 and 37208, which show both high call volume and population growth.
-- ✅ Prioritize Confirmed Crime Categories
-Reallocate resources toward Theft, Missing Person, and Escaped Prisoner calls.
-- ✅ Reduce False Alarms
-Review and refine low-confirmation call types to reduce response burden.
+| Finding | Recommended Action |
+|---|---|
+| Morning shifts peak in volume | Increase staffing 6 AM–2 PM, especially Spring |
+| High-growth suburban ZIPs | Prioritize 37135 and 37208 for expanded coverage |
+| High-confirmation crime types | Reallocate resources toward Theft and Missing Person calls |
+| Low-confirmation call types | Review and refine to reduce unnecessary response burden |
 
 ---
-## 💡 Key Takeaways
-- 📈 911 call volume rose sharply between 2018–2021, driven by suburban growth.
-- 🧭 Business zones and fast-developing ZIPs show the highest police service demand.
-- 🕐 Spring seasons and morning shifts consistently dominate in call volume.
-- 🚓 Data-driven patrol planning can improve efficiency and public safety outcomes.
+
+## 📁 Repository Structure
+
+```
+Nashville-Public-Safety/
+├── data/
+│   ├── raw/                    # Original datasets
+│   └── cleaned/                # Processed data files
+├── notebooks/
+│   └── analysis.ipynb          # Main analysis notebook
+├── visuals/
+│   ├── nashville_zip_map.png
+│   ├── call_types_confirmation.png
+│   ├── zip_growth_trend.png
+│   └── heatmap_nashville.png
+├── dashboard/                  # Power BI report file
+└── README.md
+```
 
 ---
-## 🔧 Challenges & Lessons Learned
 
-- Working with 1M+ rows required optimized filtering and aggregation.
-- Cleaning inconsistent timestamps and location data was critical.
-- Geospatial visualization in Folium provided new insights but required careful coordinate alignment.
+## 🚀 Future Work
 
----
-## 📎 References
-
-- Metro Nashville Open Data Portal
-
-- MNPD Calls for Service Dataset (2018–2021)
-
-- MNPD Crime Incidents Dataset (2018–2021)
+- [ ] Expand to **2022–2024** data for post-COVID trend analysis
+- [ ] Build **interactive Streamlit dashboard** for real-time ZIP filtering
+- [ ] Add **predictive model** for call volume forecasting by shift and season
+- [ ] Integrate **Census demographic data** for socioeconomic context
 
 ---
-## 👩‍💻 Author
 
-Jing You  
-- 📍 Data Engineer & Data Analyst in Training  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/jing-you84/)  
-- ✉️ [jingliuyou@gmail.com](mailto:jingliuyou@gmail.com)
+## 👤 Author
 
- ---
+**Jing You** — Data Analytics & Engineering
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jing--you84-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jing-you84/)
+[![GitHub](https://img.shields.io/badge/GitHub-JingYou--data-181717?style=flat&logo=github&logoColor=white)](https://github.com/JingYou-data)
+[![Portfolio](https://img.shields.io/badge/Portfolio-jingyou--data.github.io-blue?style=flat)](https://jingyou-data.github.io)
+
+---
+
+*Capstone Project · Nashville Software School · Data: Metro Nashville Open Data Portal 2018–2021*
